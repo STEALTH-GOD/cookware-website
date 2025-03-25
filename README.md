@@ -13,6 +13,6 @@ A simple, responsive cookware website built using HTML and CSS.
 
 ## How to View
 1. Download or clone this repository.
-2. Open `project1.html` in a browser.
+2. Open `index.html` in a browser.
 
 
