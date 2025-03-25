@@ -1,0 +1,204 @@
+
+
+nav{
+    background: #D9D9D9;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 15px;
+}
+
+nav a{
+    color: #0D0D0D;;
+    
+}
+
+nav a:hover{
+    color: #F25F4C;
+    
+}
+    
+.logo {
+    width:100%;
+    max-width:230px;
+    flex: 1;
+    
+}
+    
+.logo a{
+    display: flex;
+    align-items: center;
+    color: #C69C6D;
+    font-family: Irish Grover;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    
+}
+
+.logo a:hover{
+    color: #C69C6D;
+}
+
+
+.logo img{
+    width: 93px;
+    height:96px;
+    margin-right: 10px;
+    border-radius: 250px;
+}
+    
+/* .menu{
+    display: flex;
+    align-items: right;
+    list-style: none;
+} */
+    
+.list li{
+    padding: 15px 10px;
+    
+    text-align: right;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    
+}
+
+.list{
+    display: flex;
+    list-style:none;
+    gap: 20px;
+}
+    
+/* toggle menu */
+#toggle, label{
+    display:none;
+    font-size: 48px;
+}
+
+
+
+/* footer  */
+
+
+footer{
+    background-color: #BAB2B5;
+}
+
+.footercontainer{
+    width:100%;
+    padding: 70px 30px 20px;
+}
+
+
+
+/* social icons */
+.sicons{
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.sicons a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50% ;    
+   
+}
+
+.sicons a i{
+  font-size:48px;
+  color: black;
+}
+  
+
+@media screen and (max-width: 970px ){
+    .list  li{
+    font-size:18px;
+    
+    }
+
+}
+
+
+@media screen and (max-width: 600px ){
+   
+  
+
+    /* navigation */
+
+    nav {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    #toggle:checked~.nav-icons #nav-menu{
+        display:none;
+     }
+    
+    .nav-icons #nav-close{
+        display: none;
+
+    }
+
+    #toggle:checked~.nav-icons #nav-close{
+        display: block;
+    }
+
+
+    .menu{
+        
+         width:100%;
+         max-height:0;
+         overflow: hidden;
+     }
+
+    label{
+         display: inline-flex;
+     }
+
+   
+    #toggle:checked~.menu{
+         max-height: 100%;
+         /* background-color: #BAB2B5; */
+         
+     }
+
+   
+
+    .list{
+         flex-direction: column;
+         align-items: center;
+         padding: 20px;
+     }
+     
+   
+
+     /* footer */
+     .footnav ul{
+         flex-direction: column;
+     }
+ 
+     .footnav ul li{
+         width:100%;
+         margin:10px;
+         text-align:center;
+ 
+     }
+
+     .sicons a:hover{
+        background-color: #BAB2B5;
+     }
+ }
